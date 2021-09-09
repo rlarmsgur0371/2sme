@@ -5,14 +5,14 @@ void result()
 	int i;
 	for (i = 0; i < 4; i++)
 	{
-		if (arr[i] == 'C')printf("원/t");
-		else if (arr[i] == 'S')printf("네모/t");
-		else if (arr[i] == 'T')printf("세모/t");
-		else if (arr[i] == '+')printf("길게/t");
-		else if (arr[i] == '-')printf("짧게/t");
-		else printf("*/t");
+		if (arr[i] == 'C')printf("원\t");
+		else if (arr[i] == 'S')printf("네모\t");
+		else if (arr[i] == 'T')printf("세모\t");
+		else if (arr[i] == '+')printf("길게\t");
+		else if (arr[i] == '-')printf("짧게\t");
+		else printf("\t");
 	}
-	printf("/n");
+	printf("\n");
 }
 void H(char h)
 {
@@ -36,8 +36,8 @@ void L(char l)
 }
 int main()
 {
-	printf("머리/t몸/t팔/t다리/n");
-	printf("--------------------------------");
+	printf("머리\t몸\t팔\t다리\n");
+	printf("--------------------------------\n");
 	H('T'), L('+'), B('T'), H('C'), A('-'), B('C');
 	return 0;
 }
